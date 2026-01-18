@@ -163,8 +163,8 @@ body{
     }
 
     .box {
-        height: 100px; /* Size 70px se badha kar 100px kar diya */
-        width: 100px;
+        height: 80px; /* Size 70px se badha kar 100px kar diya */
+        width: 80px;
         font-size: 45px; /* X aur O ka size bhi bada */
         border-radius: 12px;
     }
