@@ -117,39 +117,6 @@ body{
 
 
 /* for mobile */
-
-/* @media(max-width: 768px) {
-    *{
-        box-sizing: border-box;
-    }
-
-    body{
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-        height: auto;
-    }
-
-    .final-msg{
-        height: auto;
-        margin-top: 150px; 
-    }
-    
-    #win{
-        font-size: 25px;
-        flex-wrap: wrap;
-        text-align: center;
-    }
-
-    .main-heading{
-        font-size: 35px;
-        font-weight: bold;
-        text-align: center;
-        padding-top: 50px;
-
-    }
-} */
-
 @media (max-width: 768px) {
     body, html {
         height: 100%;
