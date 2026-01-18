@@ -117,57 +117,87 @@ body{
 
 
 /* for mobile */
-@media (max-width: 768px) {
-    body, html {
-        height: 100%;
+/* ================= MOBILE RESPONSIVE CODE ================= */
+
+@media screen and (max-width: 600px) {
+    /* Poore page ko center karne ke liye */
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 20px;
     }
 
+    /* Heading ko center aur thoda bada karne ke liye */
+    .main-heading {
+        padding: 20px 0 !important;
+        font-size: 50px; /* Badi heading */
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Content container ko full width de kar center karna */
+    .bodycontent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    /* Purani 300px padding ko khatam kar ke center karna */
     .main-box {
-        padding: 0 20px;
+        padding: 0 !important; 
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column; /* stack vertically if needed */
-        margin-top: 150px;
+        width: 100%;
     }
 
+    /* Game Board aur Boxes ka size bada karna */
     .second-box {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 8px;
+        gap: 15px; /* Thoda zyada gap professional look ke liye */
     }
 
     .box {
-        width: 70px;
-        height: 70px;
+        height: 100px; /* Size 70px se badha kar 100px kar diya */
+        width: 100px;
+        font-size: 45px; /* X aur O ka size bhi bada */
+        border-radius: 12px;
+    }
+
+    /* Reset button ki 500px padding khatam kar ke center karna */
+    .main-reset {
+        padding: 40px 0 !important;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .reset {
+        width: 160px; /* Button bada kar diya */
+        height: 45px;
         font-size: 20px;
     }
 
-    .main-reset {
-        padding: 20px 20px 40px 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .reset, #new {
-        width: 100px;
-        height: 28px;
-        font-size: 16px;
-    }
-
+    /* Winner Message Screen */
     .final-msg {
-        margin-top: 150px;
-        display: flex;
+        height: 70vh;
+        width: 60vw;
+        display: none; /* JS isse handle karega */
         justify-content: center;
         align-items: center;
-        flex-direction: column;
-        height: 100vh;
-        gap: 4rem;
+        background-color: #080c33;
+        margin-bottom: 230px;
     }
 
-    #win {
-        font-size: 28px;
+    #win{
+        font-size: 25px;
+        padding-bottom: 30px;
         flex-wrap: wrap;
-        text-align: center;
     }
 }
+
