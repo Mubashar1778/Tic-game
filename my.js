@@ -31,13 +31,26 @@ const remove = () => {
    bodycontent.style.display = "none";
 };
 
+// let congratulate;
+
 let showWinner = (winner) => {
      winmsg.innerText = (`🏆 Congratulations! Player ${winner} has won the game.`);
      finmsg.style.display = "flex";
      disable();
      remove();
 
-};
+   //   if(!congratulate){ // agar animation already nahi hai
+         congratulate = lottie.loadAnimation({
+             container: document.getElementById('fireworks-container'),
+             renderer: 'svg',
+             loop: false,
+             autoplay: true,
+             path: 'Congratulations.json'
+         });
+     }
+
+// };
+
 
 let drawcheck = () => {
    winmsg.innerText = ("🤝 No winner this round. The game is a draw.");
